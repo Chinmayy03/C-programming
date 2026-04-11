@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+/* 
+   This is a multi-line COMMENT.
+   Comments are ignored by the compiler.
+*/
+
+int main() {
+    // This is a single-line COMMENT.
+
+    // KEYWORDS: 'int', 'const', 'float', 'return' are reserved words in C.
+    
+    // CONSTANT: A value that cannot be changed during execution.
+    const float PI = 3.14159; 
+
+    // VARIABLES: Containers for storing data values.
+    int radius = 5;           // Integer variable
+    float area;               // Floating point variable
+
+    // Logic using variables and constants
+    area = PI * radius * radius;
+
+    // Output the results
+    printf("Radius: %d\n", radius);
+    printf("The area of the circle is: %.2f\n", area);
+
+    return 0; // Return keyword ends the function
+}
