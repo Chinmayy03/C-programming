@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int rows = 5;
+
+    printf("Complex Pattern using Nested For Loops:\n\n");
+
+    // Outer loop: Manages the number of rows
+    for (int i = 1; i <= rows; i++) {
+        
+        // Inner Loop 1: Prints leading spaces for alignment
+        for (int j = i; j < rows; j++) {
+            printf("  ");
+        }
+
+        // Inner Loop 2: Prints increasing numbers (1 to i)
+        for (int k = 1; k <= i; k++) {
+            printf("%d ", k);
+        }
+
+        // Inner Loop 3: Prints decreasing numbers (i-1 down to 1)
+        for (int l = i - 1; l >= 1; l--) {
+            printf("%d ", l);
+        }
+
+        // Move to the next line after finishing each row
+        printf("\n");
+    }
+
+    return 0;
+}
