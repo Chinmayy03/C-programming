@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int rows = 10; // Number of rows to print
+    int coef = 1;
+
+    printf("--- Pascal's Triangle ---\n\n");
+
+    for (int i = 0; i < rows; i++) {
+        // Inner Loop 1: Handles leading spaces for alignment
+        for (int space = 1; space <= rows - i; space++) {
+            printf("  ");
+        }
+
+        // Inner Loop 2: Calculates and prints the numbers in the row
+        for (int j = 0; j <= i; j++) {
+            if (j == 0 || i == 0) {
+                coef = 1; // The edges of the triangle are always 1
+            } else {
+                // Binomial coefficient formula: prev_coef * (row - col) / col
+                coef = coef * (i - j + 1) / j;
+            }
+            printf("%4d", coef);
+        }
+
+        printf("\n"); // Move to the next line after each row
+    }
+
+    return 0;
+}
