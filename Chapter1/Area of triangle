@@ -2,7 +2,6 @@
 
 int main() {
     float base, height, area;
-
     printf("Enter the base: ");
     scanf("%f", &base);
 
