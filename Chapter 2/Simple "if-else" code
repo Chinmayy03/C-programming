@@ -6,6 +6,7 @@ int main(){
     if(age>=18){
         printf("ADULT");
     }
+
     else{
 printf("MINOR");
     }
