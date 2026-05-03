@@ -10,7 +10,7 @@ int main(){
     scanf("%d", &b);
     total=sum(a, b);
     printf("the sum of the two numbers you entered is: %d\n", total);
-    return 0;
+    return 0; 
 }
 int sum(int a,int b){
     int sum=a+b;
