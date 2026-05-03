@@ -6,7 +6,7 @@ int main(){
     int total;  //because the function name and variable name cannot be the same
     printf ("Enter the value of a: ");
     scanf("%d", &a);
-    printf("Enter the value of b: ");
+    printf("Enter the value of b: "); 
     scanf("%d", &b);
     total=sum(a, b);
     printf("the sum of the two numbers you entered is: %d\n", total);
