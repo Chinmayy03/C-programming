@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include<math.h>
+
+int main() {
+int n; //declaring variable n
+
+printf("Enter a number: ");    //taking user input for n
+scanf("%d", &n);               //storing the user input into variable n
+
+printf("Square of the number is: %lf", pow(n,2));   //calculating the area of square and printing it back to the user
+
+return 0;
+}
+  
