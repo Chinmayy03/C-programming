@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main(){
+int age;
+printf("Enter your age: "); // Prompt the user to enter their age    
+scanf("%d", &age);
+age<=18? printf("You are not eligible to vote.\n") : printf("You are eligible to vote.\n"); // Use ternary operator to check eligibility
+}
