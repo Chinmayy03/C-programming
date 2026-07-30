@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+    char day;
+    printf("Enter a day of the week (M, T, W, R, F, S, U): "); // Prompt the user to enter a day
+    scanf(" %c", &day);
+    switch (day){
+        case 'M':
+            printf("Monday\n");
+            break;
+        case 'T':
+            printf("Tuesday\n");
+            break;
+        case 'W':
+            printf("Wednesday\n");
+            break;
+        case 'R':
+            printf("Thursday\n");
+            break;
+        case 'F':
+            printf("Friday\n");
+            break;
+        case 'S':
+            printf("Saturday\n");
+            break;
+        case 'U':
+            printf("Sunday\n");
+            break;
+        default:
+            printf("Invalid input. Please enter a valid day of the week.\n");
+    }
+    return 0;
+}
