@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    
+    int n;
+    
+    printf("Enter a number: ");  //taking user input for number
+    scanf("%d", &n);
+    
+    int i=0;
+    
+    while(i<=n){                //while loop to print numbers from 0 to n
+        printf("%d \t", i);
+        i++;
+    }
+    return 0;
+}
